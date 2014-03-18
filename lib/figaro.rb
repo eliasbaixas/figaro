@@ -1,6 +1,6 @@
 require "figaro/application"
 require "figaro/env"
-require "figaro/rails"
+#require "figaro/rails"
 
 module Figaro
   extend self
@@ -11,9 +11,9 @@ module Figaro
     Figaro::ENV
   end
 
-  def backend
-    @backend ||= Figaro::Rails::Application
-  end
+  #def backend
+  #  @backend ||= Figaro::Rails::Application
+  #end
 
   def application
     @application ||= backend.new
